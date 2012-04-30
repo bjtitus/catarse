@@ -48,7 +48,7 @@ gem 'web_translate_it'
 gem "devise"
 
 group :development do
-  gem 'thin'
+  #gem 'thin'
 end
 
 group :test, :development do
