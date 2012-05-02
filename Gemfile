@@ -4,18 +4,17 @@ if RUBY_VERSION =~ /1.9/
 end
 
 source 'http://rubygems.org'
-source 'http://gems.github.com'
-gem 'rails', '3.0.3'
-gem 'rake', '0.8.7'
+gem 'rails', '3.2.0'
+gem 'rake'
 gem 'haml'
 gem 'slim'
 gem 'sass', '3.1.7'
 gem 'compass', '0.11.5'
-gem 'omniauth', '0.1.6'
-gem 'formtastic', '~> 1.1.0'
+gem 'omniauth'
+gem 'formtastic'
 gem 'validation_reflection'
 gem 'inherited_resources', '= 1.1.2'
-gem 'maxim-sexy_pg_constraints'
+gem 'sexy_pg_constraints', :git => 'git://github.com/maxim/sexy_pg_constraints.git'
 gem 'spectator-validates_email', :require => 'validates_email'
 gem 'vimeo'
 gem 'wirble'
@@ -38,7 +37,7 @@ gem 'http_accept_language'
 gem 'cancan'
 gem 'activeadmin', "= 0.2.2"
 gem 'carrierwave', :git => 'https://github.com/jnicklas/carrierwave.git'
-gem 'rmagick'
+#gem 'rmagick'
 gem 'fog'
 gem 'capybara', ">= 0.4.0"
 gem 'enumerate_it'
@@ -56,8 +55,8 @@ group :test, :development do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'steak', "~> 1.1.0"
-  gem 'rspec-rails', "~> 2.0.1"
-  gem 'rcov'
+  gem 'rspec-rails'
+  #gem 'rcov'
   gem 'factory_girl_rails'
   gem 'mocha'
 end
