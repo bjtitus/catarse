@@ -20,7 +20,7 @@ gem 'spectator-validates_email', :require => 'validates_email'
 gem 'vimeo'
 gem 'wirble'
 gem "on_the_spot"
-gem 'unicorn'
+#gem 'unicorn'
 gem 'mailee', '0.5.4', :git => 'https://github.com/danielweinmann/mailee-api.git'
 gem 'will_paginate', ">= 3.0.pre2"
 gem 'weekdays'
