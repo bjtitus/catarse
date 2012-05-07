@@ -38,7 +38,7 @@ gem 'http_accept_language'
 gem 'cancan'
 gem 'activeadmin', "= 0.2.2"
 gem 'carrierwave'
-gem 'RMagick'
+gem 'rmagick-2.12.0-x86-mswin32', '2.12.0', :path => 'vendor' 
 gem 'fog'
 gem 'capybara', ">= 0.4.0"
 gem 'enumerate_it'

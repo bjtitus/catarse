@@ -13,11 +13,17 @@ GIT
       httparty (~> 0.6.1)
       nokogiri (~> 1.4.2)
 
+PATH
+  remote: vendor
+  specs:
+    rmagick-2.12.0-x86-mswin32 (2.12.0)
+
 GEM
   remote: http://rubygems.org/
   remote: http://gems.github.com/
   specs:
     RedCloth (4.2.9)
+    RedCloth (4.2.9-x86-mingw32)
     abstract (1.0.0)
     actionmailer (3.0.3)
       actionpack (= 3.0.3)
@@ -61,6 +67,7 @@ GEM
     auto_html (1.3.6)
       RedCloth
     bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     brcep (3.1.0)
     builder (2.1.2)
     cancan (1.6.7)
@@ -134,7 +141,6 @@ GEM
       will_paginate (>= 2.3.12)
     json (1.7.1)
     json_pure (1.7.1)
-    kgio (2.7.4)
     launchy (2.1.0)
       addressable (~> 2.2.6)
     libwebsocket (0.1.3)
@@ -162,6 +168,7 @@ GEM
       net-ssh (>= 1.99.1)
     net-ssh (2.3.0)
     nokogiri (1.4.7)
+    nokogiri (1.4.7-x86-mingw32)
     oa-basic (0.1.6)
       multi_json (~> 0.0.2)
       nokogiri (~> 1.4.2)
@@ -204,6 +211,7 @@ GEM
       i18n
       restclient_with_cert
     pg (0.13.2)
+    pg (0.13.2-x86-mingw32)
     polyglot (0.3.3)
     pyu-ruby-sasl (0.0.3.3)
     rack (1.2.5)
@@ -228,14 +236,12 @@ GEM
       activesupport (= 3.0.3)
       rake (>= 0.8.7)
       thor (~> 0.14.4)
-    raindrops (0.8.0)
     rake (0.8.7)
     responders (0.6.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     restclient_with_cert (0.0.8)
       rest-client (>= 1.6)
-    rmagick (2.13.1)
     routing-filter (0.3.1)
       actionpack
     rspec (2.0.1)
@@ -285,10 +291,7 @@ GEM
     trollop (1.16.2)
     tzinfo (0.3.33)
     unicode (0.4.2)
-    unicorn (4.3.1)
-      kgio (~> 2.6)
-      rack
-      raindrops (~> 0.7)
+    unicode (0.4.2-x86-mingw32)
     validation_reflection (1.0.0)
     vimeo (1.5.2)
       httparty (>= 0.4.5)
@@ -310,6 +313,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   RedCloth
@@ -345,7 +349,7 @@ DEPENDENCIES
   rack-timeout
   rails (= 3.0.3)
   rake (= 0.8.7)
-  rmagick
+  rmagick-2.12.0-x86-mswin32 (= 2.12.0)!
   routing-filter
   rspec-rails (~> 2.0.1)
   sass (= 3.1.7)
@@ -354,7 +358,6 @@ DEPENDENCIES
   spectator-validates_email
   steak (~> 1.1.0)
   unicode
-  unicorn
   validation_reflection
   vimeo
   web_translate_it
