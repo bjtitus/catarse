@@ -4,17 +4,19 @@ if RUBY_VERSION =~ /1.9/
 end
 
 source 'http://rubygems.org'
-gem 'rails', '>= 3.0.3'
+gem 'rails', '3.2.3'
 gem 'rake'
 gem 'haml'
 gem 'slim'
-gem 'sass', '3.1.7'
+gem 'sass-rails', "~> 3.2.5"
 gem 'compass', '0.11.5'
 gem 'omniauth'
-gem 'formtastic'
-gem 'validation_reflection'
-gem 'inherited_resources', '>= 1.3.1'
-gem 'sexy_pg_constraints', :git => 'git://github.com/maxim/sexy_pg_constraints.git'
+gem 'omniauth-openid'
+gem 'omniauth-oauth'
+gem 'formtastic', '>= 1.2.0'
+gem 'validation_reflection', :git => 'https://github.com/ncri/validation_reflection'
+gem 'inherited_resources'
+gem 'sexy_pg_constraints', :git => 'https://github.com/dnd/sexy_pg_constraints.git', :branch => 'rails3'
 gem 'spectator-validates_email', :require => 'validates_email'
 gem 'vimeo'
 gem 'wirble'
@@ -35,25 +37,28 @@ gem 'unicode'
 gem 'routing-filter'
 gem 'http_accept_language'
 gem 'cancan'
-gem 'activeadmin', "= 0.2.2"
+gem 'activeadmin'
+gem "activerecord", "~> 3.2.3"
 gem 'carrierwave', :git => 'https://github.com/jnicklas/carrierwave.git'
-#gem 'rmagick'
+gem 'rmagick'
 gem 'fog'
 gem 'capybara', ">= 0.4.0"
 gem 'enumerate_it'
 #gem 'httparty'
 gem "rack-timeout"
 gem 'web_translate_it'
-gem "devise"
+#gem "devise"
+gem 'prototype-rails'
 
 group :development do
   #gem 'thin'
+  gem 'sqlite3'
 end
 
 group :test, :development do
   gem 'annotate'
   gem 'launchy'
-  gem 'database_cleaner'
+  #gem 'database_cleaner'
   gem 'steak', "~> 1.1.0"
   gem 'rspec-rails'
   #gem 'rcov'
