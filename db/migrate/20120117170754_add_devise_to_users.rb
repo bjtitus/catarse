@@ -23,7 +23,7 @@ class AddDeviseToUsers < ActiveRecord::Migration
     # add_index :users, :unlock_token,         :unique => true
     # add_index :users, :authentication_token, :unique => true
 
-    execute("CREATE UNIQUE INDEX users_email ON users (email) WHERE provider = 'devise'")
+    #execute("CREATE UNIQUE INDEX users_email ON users (email) WHERE provider = 'devise'")
   end
 
   def self.down

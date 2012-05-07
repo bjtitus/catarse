@@ -3,7 +3,7 @@ class AddRefundFieldsToBackers < ActiveRecord::Migration
     add_column :backers, :can_refund, :boolean, :default => false
     add_column :backers, :requested_refund, :boolean, :default => false
     add_column :backers, :refunded, :boolean, :default => false
-    execute("UPDATE backers SET can_refund = false, requested_refund = false, refunded = false")
+    #execute("UPDATE backers SET can_refund = false, requested_refund = false, refunded = false")
   end
 
   def self.down

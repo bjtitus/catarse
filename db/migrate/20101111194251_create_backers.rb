@@ -1,4 +1,4 @@
-require 'sexy_pg_constraints'
+#require 'sexy_pg_constraints'
 class CreateBackers < ActiveRecord::Migration
   def self.up
     create_table :backers do |t|
@@ -10,12 +10,12 @@ class CreateBackers < ActiveRecord::Migration
       t.timestamp :confirmed_at
       t.timestamps
     end
-    constrain :backers do |t|
-      t.project_id :reference => {:projects => :id}
-      t.user_id :reference => {:users => :id}
-      t.reward_id :reference => {:rewards => :id}
-      t.value :positive => true
-    end
+#    constrain :backers do |t|
+#      t.project_id :reference => {:projects => :id}
+#      t.user_id :reference => {:users => :id}
+#      t.reward_id :reference => {:rewards => :id}
+#      t.value :positive => true
+#    end
     add_index :backers, :project_id
     add_index :backers, :user_id
     add_index :backers, :reward_id

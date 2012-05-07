@@ -1,4 +1,4 @@
-require 'sexy_pg_constraints'
+#require 'sexy_pg_constraints'
 class CreateComments < ActiveRecord::Migration
   def self.up
     create_table :comments do |t|
@@ -10,10 +10,10 @@ class CreateComments < ActiveRecord::Migration
       t.boolean :project_update, :default => false
       t.timestamps
     end
-    constrain :comments do |t|
-      t.user_id :reference => {:users => :id}
-      t.comment :not_blank => true
-    end
+#    constrain :comments do |t|
+#      t.user_id :reference => {:users => :id}
+#      t.comment :not_blank => true
+#    end
     add_index :comments, :commentable_type
     add_index :comments, :commentable_id
     add_index :comments, :user_id
