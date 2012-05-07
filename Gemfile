@@ -4,7 +4,7 @@ if RUBY_VERSION =~ /1.9/
 end
 
 source 'http://rubygems.org'
-gem 'rails', '3.2.0'
+gem 'rails', '>= 3.0.3'
 gem 'rake'
 gem 'haml'
 gem 'slim'
@@ -13,7 +13,7 @@ gem 'compass', '0.11.5'
 gem 'omniauth'
 gem 'formtastic'
 gem 'validation_reflection'
-gem 'inherited_resources', '= 1.1.2'
+gem 'inherited_resources', '>= 1.3.1'
 gem 'sexy_pg_constraints', :git => 'git://github.com/maxim/sexy_pg_constraints.git'
 gem 'spectator-validates_email', :require => 'validates_email'
 gem 'vimeo'
