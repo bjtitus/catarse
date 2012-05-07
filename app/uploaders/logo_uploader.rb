@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 class LogoUploader < CarrierWave::Uploader::Base
-  include CarrierWave::RMagick
+  #include CarrierWave::RMagick
 
   begin
     if Rails.env.production? and Configuration.find_by_name('aws_access_key')
@@ -22,7 +22,7 @@ class LogoUploader < CarrierWave::Uploader::Base
   end
 
   version :thumb do
-    process :resize_to_fill => [260,170]
-    process :convert => :png
+    #process :resize_to_fill => [260,170]
+    #process :convert => :png
   end
 end
