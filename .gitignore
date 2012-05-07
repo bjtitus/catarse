@@ -16,4 +16,3 @@ chromedriver.log
 config/locales/.wti
 
 .rvmrc
-Gemfile.lock

@@ -4,6 +4,7 @@ if RUBY_VERSION =~ /1.9/
 end
 
 source 'http://rubygems.org'
+source 'http://gems.github.com'
 gem 'rails', '3.0.3'
 gem 'rake', '0.8.7'
 gem 'haml'
@@ -14,12 +15,12 @@ gem 'omniauth', '0.1.6'
 gem 'formtastic', '~> 1.1.0'
 gem 'validation_reflection'
 gem 'inherited_resources', '= 1.1.2'
-gem 'sexy_pg_constraints', :git => 'git://github.com/maxim/sexy_pg_constraints.git'
+gem 'maxim-sexy_pg_constraints'
 gem 'spectator-validates_email', :require => 'validates_email'
 gem 'vimeo'
 gem 'wirble'
 gem "on_the_spot"
-#gem 'unicorn'
+gem 'unicorn'
 gem 'mailee', '0.5.4', :git => 'https://github.com/danielweinmann/mailee-api.git'
 gem 'will_paginate', ">= 3.0.pre2"
 gem 'weekdays'
@@ -36,8 +37,8 @@ gem 'routing-filter'
 gem 'http_accept_language'
 gem 'cancan'
 gem 'activeadmin', "= 0.2.2"
-gem 'carrierwave', :git => 'https://github.com/jnicklas/carrierwave.git'
-#gem 'rmagick'
+gem 'carrierwave'
+gem 'rmagick'
 gem 'fog'
 gem 'capybara', ">= 0.4.0"
 gem 'enumerate_it'
@@ -55,7 +56,7 @@ group :test, :development do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'steak', "~> 1.1.0"
-  gem 'rspec-rails'
+  gem 'rspec-rails', "~> 2.0.1"
   #gem 'rcov'
   gem 'factory_girl_rails'
   gem 'mocha'
