@@ -102,8 +102,8 @@ RSpec.configure do |config|
 
   config.before(:each) do
     DatabaseCleaner.clean
-    I18n.locale = :pt
-    I18n.default_locale = :pt
+    I18n.locale = :en
+    I18n.default_locale = :en
   end
 end
 

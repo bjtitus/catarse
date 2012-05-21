@@ -97,7 +97,7 @@ describe Projects::BackersController do
 
   describe "review" do
     it "should redirect when user not loged" do
-      post :review, {:locale => :pt, :project_id => @project.id}
+      post :review, {:locale => :en, :project_id => @project.id}
       response.should be_redirect
     end
 
