@@ -1163,6 +1163,19 @@ body#platform #user .user_menu_border {
   -khtml-border-top-left-radius: 16px;
   border-top-left-radius: 16px;
 }
+/* line 56, ../../app/stylesheets/_user.sass */
+body#platform #user #financials {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+/* line 61, ../../app/stylesheets/_user.sass */
+body#platform #user #investbutton {
+  position: relative;
+  width: 100px;
+  height: 75px;
+}
 /* line 57, ../../app/stylesheets/screen.sass */
 body#platform #content_wrapper {
   background-color: #006733;
