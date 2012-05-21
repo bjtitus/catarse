@@ -29,6 +29,7 @@ ActiveAdmin.register Project do
       f.input :curated_pages
       f.input :name, :as => :string
       f.input :goal
+      f.input :rate
       f.input :expires_at
       f.input :about
       f.input :headline

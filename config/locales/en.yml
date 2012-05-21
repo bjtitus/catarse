@@ -308,6 +308,7 @@ en:
           not_expired: "This project will be successful and funded on %{date}"
         waiting_confirmation: "Waiting confirmation from payments to know if this project will be funded."
       reached_of: "Reached of"
+      interest_rate: "Interest Rate"
       submit: "Back this project"
     backer:
       anonymous_backer: "Anonymous backer"

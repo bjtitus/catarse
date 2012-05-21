@@ -1,6 +1,8 @@
 .info
   .number= @project.total_backers
   #{pluralize_without_number(@project.total_backers, t('.person'))} #{t('.has')} #{pluralize_without_number(@project.total_backers, t('.backed_singular'), t('.backed_plural'))}
+  .number= @project.rate.to_s + '%'
+  = t('.interest_rate')
   .number= @project.display_pledged
   = t('.reached_of')
   %strong= @project.display_goal
