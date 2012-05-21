@@ -916,7 +916,7 @@ body#platform #login .with_google .login_with_google p {
 }
 /* line 47, ../../app/stylesheets/screen.sass */
 body#platform #pre_header {
-  background-color: #0084b9;
+  background-color: #1a1363;
   text-align: center;
   padding: 8px 0;
   margin-bottom: 8px;
@@ -1165,8 +1165,8 @@ body#platform #user .user_menu_border {
 }
 /* line 57, ../../app/stylesheets/screen.sass */
 body#platform #content_wrapper {
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #006733;
+  background-color: #006733;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -1184,8 +1184,8 @@ body#platform #content_wrapper #content_header {
   text-align: center;
   color: white;
   padding: 20px;
-  background-color: #009600;
-  background-color: rgba(0, 150, 0, 0.7);
+  background-color: #1a1363;
+  background-color: #1a1363;
   -moz-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
   -o-border-top-left-radius: 6px;
@@ -1295,25 +1295,32 @@ body#platform #content_wrapper #content p {
 }
 /* line 61, ../../app/stylesheets/_content.sass */
 body#platform #content_wrapper #content #homemap {
-  width: 400px;
-  height: 200px;
-  background-image: url("/images/P2B_homepage_button.png");
+  width: 800px;
+  height: 515px;
+  background-image: url("/images/P2B_homepage_button_idea.png");
   margin: 10px auto;
   padding: 0;
   position: relative;
 }
 /* line 68, ../../app/stylesheets/_content.sass */
-body#platform #content_wrapper #content #homemap li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+body#platform #content_wrapper #content #homemap a {
   position: absolute;
+  display: block;
+}
+/* line 71, ../../app/stylesheets/_content.sass */
+body#platform #content_wrapper #content #homemap #link1 {
+  width: 347px;
+  height: 402px;
+  top: 17px;
+  left: 13px;
   top: 0;
 }
-/* line 74, ../../app/stylesheets/_content.sass */
-body#platform #content_wrapper #content #homemap li, body#platform #content_wrapper #content #homemap a {
-  height: 200px;
-  display: block;
+/* line 77, ../../app/stylesheets/_content.sass */
+body#platform #content_wrapper #content #homemap #link2 {
+  width: 367px;
+  height: 361px;
+  top: 126px;
+  left: 412px;
 }
 /* line 2, ../../app/stylesheets/_profile.sass */
 body#platform #profile_header {
