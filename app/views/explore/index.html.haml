@@ -1,6 +1,6 @@
 = content_for :content_header do
-  %h1 Discover your next investment
-  %h2 Discover the right business for you to invest in.
+  %h1= t('.title')
+  %h2= t('.subtitle')
 #explore_projects
   #explore_menu
     - unless @recommended.empty? and @expiring.empty? and @recent.empty? and @successful.empty?
@@ -27,5 +27,3 @@
     #explore_all.results.hide= render :partial => 'projects/project', :collection => @all
   .clear
 = javascript_include_tag 'explore_projects'
-
-
