@@ -1515,6 +1515,18 @@ body#platform #user_feed .hint {
 body#platform #user_feed .loading {
   display: none;
 }
+/* line 115, ../../app/stylesheets/_profile.sass */
+body#platform #user_feed #financials {
+  position: relative;
+  width: 350px;
+  height: 300px;
+}
+/* line 119, ../../app/stylesheets/_profile.sass */
+body#platform #user_feed #investbutton {
+  position: relative;
+  width: 350px;
+  height: 200px;
+}
 /* line 2, ../../app/stylesheets/_projects.sass */
 body#platform .project_list_header {
   font-weight: bold;
