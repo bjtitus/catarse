@@ -25,23 +25,45 @@ if($('#explore_projects .selected').length == 0){
 }
 $('#explore_projects .selected').click()
 
-$(".sliderbar").noUiSlider("init", { scale: [0.0, 10.0], startMin: 2, startMax: 8, tracker:
+$("#sliderbar-rate").noUiSlider("init", { scale: [0.0, 10.0], startMin: 2, startMax: 8, tracker:
 
   function(){
-    var lowVal = Math.round($(".sliderbar").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
+    var lowVal = Math.round($("#sliderbar-rate").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
     $("#lowValue").text(
       lowVal
     );
-    var highVal = Math.round($(".sliderbar").noUiSlider("getValue", {point: "upper"}));
+    var highVal = Math.round($("#sliderbar-rate").noUiSlider("getValue", {point: "upper"}));
     $("#highValue").text(
       highVal
     );
     for (var i = 0; i < lowVal; i++)
-      $("." + i).hide();
+      $(".r" + i).hide();
     for (var x = lowVal; x <= highVal; x++)
-      $("." + x).show();
+      $(".r" + x).show();
     for(var j = highVal+1; j <= 10; j++)
-      $("." + j).hide();
+      $(".r" + j).hide();
+  }
+
+});
+
+
+$("#sliderbar-inv").noUiSlider("init", { scale: [0.0, 4.0], startMin: 2, startMax: 4, tracker:
+
+  function(){
+    var lowVal = Math.round($("#sliderbar-inv").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
+    $("#lowGrade").text(
+      lowVal
+    );
+    var highVal = Math.round($("#sliderbar-inv").noUiSlider("getValue", {point: "upper"}));
+    $("#highGrade").text(
+      highVal
+    );
+    for (var i = 0; i < lowVal; i++)
+      $(".i" + i).hide();
+    for (var x = lowVal; x <= highVal; x++)
+      $(".i" + x).show();
+    for(var j = highVal+1; j <= 10; j++)
+      $(".i" + j).hide();
   }
 
 });

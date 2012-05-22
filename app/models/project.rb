@@ -9,6 +9,7 @@ class Project < ActiveRecord::Base
   acts_as_commentable
   belongs_to :user
   belongs_to :category
+  validates :investment_scale, :numericality => { :greater_than_or_equal_to => 0, :less_than_or_equal_to => 4}
   has_many :projects_curated_pages
   has_many :curated_pages, :through => :projects_curated_pages
   has_many :backers, :dependent => :destroy

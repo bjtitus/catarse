@@ -1,4 +1,4 @@
-.project_box{:class => project.rate.to_i}
+.project_box{:class => 'r' + project.rate.to_i.to_s + ' i' + project.investment_scale.to_i.to_s}
   .project_wrap
     - if project.expired?
       .status_image

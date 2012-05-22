@@ -15,9 +15,11 @@
         - unless @successful.empty?
           %li= link_to t('.successful'), '#', :id => 'menu_successful', :class => (params[:quick] == 'successful' ? 'selected' : nil)
     %h3= t('.indepth_explore')
-    .sliderbar
+    #sliderbar-rate.sliderbar
     #lowValue
     #highValue
+    <br/>
+    #sliderbar-inv.sliderbar
     - unless @categories.empty?
       %h3= t('.categories')
       %ul#explore_categories
