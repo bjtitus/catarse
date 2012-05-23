@@ -29,11 +29,11 @@ $("#sliderbar-rate").noUiSlider("init", { scale: [0.0, 10.0], startMin: 2, start
 
   function(){
     var lowVal = Math.round($("#sliderbar-rate").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
-    $("#lowValue").text(
+    $("#sliderbar-rate div.noUi_lowerHandle div").text(
       lowVal
     );
     var highVal = Math.round($("#sliderbar-rate").noUiSlider("getValue", {point: "upper"}));
-    $("#highValue").text(
+    $("#sliderbar-rate div.noUi_upperHandle div").text(
       highVal
     );
     for (var i = 0; i < lowVal; i++)
@@ -51,11 +51,11 @@ $("#sliderbar-inv").noUiSlider("init", { scale: [0.0, 4.0], startMin: 2, startMa
 
   function(){
     var lowVal = Math.round($("#sliderbar-inv").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
-    $("#lowGrade").text(
+    $("#sliderbar-inv div.noUi_lowerHandle div").text(
       lowVal
     );
     var highVal = Math.round($("#sliderbar-inv").noUiSlider("getValue", {point: "upper"}));
-    $("#highGrade").text(
+    $("#sliderbar-inv div.noUi_upperHandle div").text(
       highVal
     );
     for (var i = 0; i < lowVal; i++)
