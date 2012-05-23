@@ -9,7 +9,8 @@ function drawChart() {
   ]);
 
   var options = {
-    title: 'My Investments'
+    title: 'My Investments',
+    backgroundColor: 'transparent',
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('chart'));
