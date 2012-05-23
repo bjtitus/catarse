@@ -221,6 +221,16 @@ class User < ActiveRecord::Base
 
   end
 
+  def backs_as_json
+    items = []
+    if backs
+      for theBackers in backs.confirmed
+        items.push(theBackers.as_json(:can_manage => true))
+      end
+    end
+    items.to_json
+  end
+
   def is_devise?
     provider == 'devise'
   end

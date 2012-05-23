@@ -97,6 +97,7 @@ class Backer < ActiveRecord::Base
 
     if options and options[:can_manage]
       json_attributes.merge!({
+        :project => project.as_json,
         :display_value => display_value,
         :reward => reward
       })
