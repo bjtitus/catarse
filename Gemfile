@@ -54,6 +54,10 @@ group :development do
   #gem 'thin'
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 group :test, :development do
   gem 'annotate'
   gem 'launchy'
