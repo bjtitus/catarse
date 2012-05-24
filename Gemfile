@@ -48,6 +48,7 @@ gem "rack-timeout"
 gem 'web_translate_it'
 gem "devise"
 gem 'dalli'
+gem 'newrelic_rpm'
 
 group :development do
   #gem 'thin'

@@ -170,6 +170,7 @@ GEM
       net-ssh (>= 1.99.1)
     net-ssh (2.5.1)
       jruby-pageant (>= 1.0.2)
+    newrelic_rpm (3.3.4.1)
     nokogiri (1.4.7)
     nokogiri (1.4.7-x86-mingw32)
     oa-basic (0.1.6)
@@ -346,6 +347,7 @@ DEPENDENCIES
   mocha
   moip!
   mustache
+  newrelic_rpm
   omniauth (= 0.1.6)
   on_the_spot
   paypal-express
