@@ -14,8 +14,11 @@
     var backs = [#{ @user.backs_as_json }];
     var dataArray = [['Task', 'Hours per Day']];
     for(var backID in backs) {
-    	var back = backs[backID][0];
-    	dataArray.push([back.project.name, parseFloat(back.display_value.replace("$", ""))]);
+      var projects = backs[backID];
+      for(var projID in backs[backID]) {
+        proj = projects[projID];
+        dataArray.push([proj.project.name, parseFloat(proj.display_value.replace("$", ""))]);
+      }
     }
     dataArray.push(['Uninvested Funds', parseFloat("#{@user.display_credits}".replace("$", ""))]);
 = javascript_include_tag 'graphing'
