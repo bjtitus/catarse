@@ -25,6 +25,7 @@ gem 'mailee', '0.5.4', :git => 'https://github.com/danielweinmann/mailee-api.git
 gem 'will_paginate', ">= 3.0.pre2"
 gem 'weekdays'
 gem 'moip', :git => 'https://github.com/danielweinmann/moip-ruby.git'
+#gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'paypal-express', :require => 'paypal'
 gem 'brcep'
 gem "meta_search"
@@ -46,6 +47,7 @@ gem 'enumerate_it'
 gem "rack-timeout"
 gem 'web_translate_it'
 gem "devise"
+gem 'dalli'
 
 group :development do
   #gem 'thin'
