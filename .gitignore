@@ -15,4 +15,6 @@ chromedriver.log
 .use_capybara_webkit
 config/locales/.wti
 
+.vagrant
+
 .rvmrc

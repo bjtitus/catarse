@@ -37,19 +37,25 @@ class ProjectsController < ApplicationController
     return unless require_login
     new! do
       @title = t('projects.new.title')
-      @project.rewards.build
+      #@project.rewards.build
     end
   end
   def create
     params[:project][:expires_at] += (23.hours + 59.minutes + 59.seconds) if params[:project][:expires_at]
-    validate_rewards_attributes if params[:project][:rewards_attributes].present?
-    create!(:notice => t('projects.create.success'))
+    #validate_rewards_attributes if params[:project][:rewards_attributes].present?
+    #create(:notice => t('projects.create.success'))
+    @project = Project.new(params[:project])
+    if @project.save
+      redirect_to :show
+    else
+      redirect_to :root
+    end
     # When it can't create the project the @project doesn't exist and then it causes a record not found
     # because @project.reload *works only with created records*
-    unless @project.new_record?
-      @project.reload
-      @project.update_attribute :short_url, bitly
-    end
+    #unless @project.new_record?
+    #  @project.reload
+    #  @project.update_attribute :short_url, bitly
+    #end
   end
   def show
     show!{
