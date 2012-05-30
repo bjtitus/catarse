@@ -1,0 +1,16 @@
+id: 20bac620-8c38-012f-5cdd-12313810a9d0
+setup:
+  commands:
+  - bundle install --without development production
+  - bundle exec rake db:migrate
+test:
+  commands:
+  - bundle exec rake
+deploy:
+  heroku:
+    staging:
+      name: blazing-river-3783
+    production:
+      name: ''
+ruby_versions:
+- 1.9.3
