@@ -31,4 +31,6 @@
     #explore_successful.results.hide= render :partial => 'projects/project', :collection => @successful
     #explore_all.results.hide= render :partial => 'projects/project', :collection => @all
   .clear
+  :javascript
+    var investmenttypes = #{ @investmenttypes };
 = javascript_include_tag 'explore_projects'

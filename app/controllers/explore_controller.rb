@@ -11,6 +11,8 @@ class ExploreController < ApplicationController
     @recent = Project.visible.recent.limit(16).order('created_at DESC').all
     @successful = Project.visible.successful.order('expires_at DESC').all
     @all = Project.visible.order('created_at DESC').all
+    # Note that I'm an idiot and used a reserved word so order needs to be in quotes
+    @investmenttypes = InvestmentType.order('"order" DESC').all.as_json(:as_array => true)
   end
 
   def can_update_on_the_spot?

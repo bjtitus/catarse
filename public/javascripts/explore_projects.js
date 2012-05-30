@@ -25,7 +25,12 @@ if($('#explore_projects .selected').length == 0){
 }
 $('#explore_projects .selected').click()
 
-$("#sliderbar-rate").noUiSlider("init", { scale: [0.0, 10.0], startMin: 2, startMax: 8, tracker:
+var minRate = 2;
+var maxRate = 8;
+var minInv = 0;
+var maxInv = 2;
+
+$("#sliderbar-rate").noUiSlider("init", { scale: [0.0, 10.0], startMin: minRate, startMax: maxRate, tracker:
 
   function(){
     var lowVal = Math.round($("#sliderbar-rate").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
@@ -47,16 +52,16 @@ $("#sliderbar-rate").noUiSlider("init", { scale: [0.0, 10.0], startMin: 2, start
 });
 
 
-$("#sliderbar-inv").noUiSlider("init", { scale: [0.0, 4.0], startMin: 2, startMax: 4, tracker:
+$("#sliderbar-inv").noUiSlider("init", { scale: [0.0, 4.0], startMin: minInv, startMax: maxInv, tracker:
 
   function(){
     var lowVal = Math.round($("#sliderbar-inv").noUiSlider("getValue")[0]); // Without options, 'getValue' returns an array.
     $("#sliderbar-inv div.noUi_lowerHandle div").text(
-      lowVal
+      investmenttypes[lowVal]
     );
     var highVal = Math.round($("#sliderbar-inv").noUiSlider("getValue", {point: "upper"}));
     $("#sliderbar-inv div.noUi_upperHandle div").text(
-      highVal
+      investmenttypes[highVal]
     );
     for (var i = 0; i < lowVal; i++)
       $(".i" + i).hide();
@@ -67,3 +72,23 @@ $("#sliderbar-inv").noUiSlider("init", { scale: [0.0, 4.0], startMin: 2, startMa
   }
 
 });
+
+/*****Show the initial Values of sliders******/
+
+//Show the Minimum Rate Label
+$("#sliderbar-rate div.noUi_lowerHandle div").text(
+  minRate
+);
+//Show the Maximum Rate Label
+$("#sliderbar-rate div.noUi_upperHandle div").text(
+  maxRate
+);
+
+//Show the Minimum Investment Label
+$("#sliderbar-inv div.noUi_lowerHandle div").text(
+  investmenttypes[minInv]
+);
+//Show the Maximum Investment Label
+$("#sliderbar-inv div.noUi_upperHandle div").text(
+  investmenttypes[maxInv]
+);
