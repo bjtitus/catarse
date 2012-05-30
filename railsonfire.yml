@@ -1,11 +1,11 @@
 id: 20bac620-8c38-012f-5cdd-12313810a9d0
 setup:
   commands:
-  - bundle install --without production
-  - bundle exec rake db:migrate
+  #- bundle install --without production
+  #- bundle exec rake db:migrate
 test:
   commands:
-  - bundle exec rake
+  #- bundle exec rake
 deploy:
   heroku:
     staging:
