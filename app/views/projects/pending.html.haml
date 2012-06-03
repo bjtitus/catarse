@@ -43,6 +43,8 @@
           %th= t('.recommended')
           %th= t('.home_page')
           %th= t('.order')
+          %th= t('.interest_rate')
+          %th= t('.investment_grade')
           %th= t('.can_finish')
           %th= t('.finished')
       %tbody
@@ -60,6 +62,8 @@
             %td= check_box_tag "project__recommended__#{project.id}", '1', project.recommended
             %td= check_box_tag "project__home_page__#{project.id}", '1', project.home_page
             %td= on_the_spot_edit project, :order, :tooltip => '-'
+            %td= on_the_spot_edit project, :rate, :tooltip => '-'
+            %td= select "project__investment_scale__#{project.id}", :investment_scale, InvestmentType.all.collect {|i| [ i.name, i.id ]}, { :selected => project.investment_scale }
             %td= check_box_tag "project__can_finish__#{project.id}", '1', project.can_finish
             %td= (project.finished ? t('yes') : t('no'))
   = will_paginate @projects

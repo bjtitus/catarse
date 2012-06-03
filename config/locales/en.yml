@@ -386,6 +386,8 @@ en:
       name: Name
       no_projects: "No projects found."
       order: Order
+      interest_rate: Interest Rate
+      investment_grade: Investment Grade
       project: Project
       recommended: Recommended?
       rejected: Rejected?
