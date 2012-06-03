@@ -5,7 +5,7 @@ end
 
 source 'http://rubygems.org'
 source 'http://gems.github.com'
-gem 'rails', '3.0.3'
+gem 'rails', '3.1'
 gem 'rake', '0.8.7'
 gem 'haml'
 gem 'slim'
