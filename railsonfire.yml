@@ -10,7 +10,7 @@ test:
 deploy:
   heroku:
     staging:
-      name: blazing-river-3783
+      name: p2b
     production:
       name: ''
 ruby_versions:
