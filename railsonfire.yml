@@ -5,7 +5,7 @@ setup:
   - bundle exec rake db:migrate
 test:
   commands:
-  - bundle exec rake
+  #- bundle exec rake
 deploy:
   heroku:
     staging:
