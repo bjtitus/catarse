@@ -14,6 +14,7 @@ Catarse::Application.routes.draw do
   match '/sitemap' => "static#sitemap", :as => :sitemap
   # Static Pages
   match "/guidelines" => "static#guidelines", :as => :guidelines
+  match "/investorguidelines" => "static#investorguidelines", :as => :investorguidelines
   match "/faq" => "static#faq", :as => :faq
   match "/terms" => "static#terms", :as => :terms
   match "/privacy" => "static#privacy", :as => :privacy

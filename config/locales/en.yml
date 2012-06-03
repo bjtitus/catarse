@@ -527,10 +527,15 @@ en:
     faq:
       title: "Frequent asked questions"
     guidelines:
-      accept: "I have read and understood how Catarse works."
-      submit: "I want to submit my project"
-      subtitle: "Before submitting your project, learn a little about how Catarse works."
-      title: "How does Catarse work?"
+      accept: "I have read and understood how P2B Financial works."
+      submit: "I want to submit my business"
+      subtitle: "Before submitting your business, learn a little about how P2B Financial works."
+      title: "How does P2B Financial work?"
+    investorguidelines:
+      accept: "I have read and understood how P2B Financial works."
+      submit: "I want to signup as an investor"
+      subtitle: "Before signing up, learn a little about how P2B Financial works."
+      title: "How does P2B Financial work?"
     privacy:
       title: "Privacy Policy"
     terms:

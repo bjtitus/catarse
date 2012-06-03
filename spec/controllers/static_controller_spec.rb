@@ -13,6 +13,13 @@ describe StaticController do
     its(:body){ should =~ /#{I18n.t('static.guidelines.subtitle')}/ }
   end
 
+  describe 'GET investorguidelines' do
+    before{ get :investorguidelines, {:locale => :pt} }
+    it{ should be_success }
+    its(:body){ should =~ /#{I18n.t('static.investorguidelines.title')}/ }
+    its(:body){ should =~ /#{I18n.t('static.investorguidelines.subtitle')}/ }
+  end
+
   describe 'GET faq' do
     before{ get :faq, {:locale => :pt} }
     it{ should be_success }
