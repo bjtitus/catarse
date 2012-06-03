@@ -36,7 +36,7 @@ Catarse::Application.configure do
   config.serve_static_assets = false
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = true
+  #config.assets.compile = true
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
