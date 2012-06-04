@@ -8,8 +8,8 @@
     %h3 Available Balance
     = @user.display_credits
   %div{:id => "chart"}
-  %div{:id => "investbutton"}
-  = image_tag ('InvestmentB.png')
+    %div{:id => "investbutton"}
+      = image_tag ('InvestmentB.png')
   :javascript
     var backs = [#{ @user.backs_as_json }];
     var dataArray = [['Task', 'Hours per Day']];
