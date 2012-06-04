@@ -10,7 +10,8 @@
         = link_to credits_path do
           = t('.my_credits')
           .small (#{current_user.display_credits})
-      %li 
-        %a{:href => "/projects/pending"} Admin
+      - if current_user.admin?
+        %li
+          %a{:href => "/projects/pending"} Admin
       %li= link_to t('.logout'), logout_path
 = javascript_include_tag 'user'
