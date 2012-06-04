@@ -37,6 +37,8 @@
 	border-radius:			5px;
 	background:				#EEE;
 	text-align: 			center;
+	color:					black;
+	text-shadow:			0.1em 0.1em white;
 }
 
 .noUi_sliderKnob:hover,
