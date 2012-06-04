@@ -7,9 +7,6 @@
 = render 'guidelines_text'
 = form_tag(new_project_path, :method => :get, :id => 'guidelines_form') do
   %fieldset
-    = check_box_tag 'accept'
-    = label_tag 'accept', t('.accept')
-  %fieldset
-    = submit_tag t('.submit'), :disabled => true
+    = submit_tag t('.submit')
 = javascript_include_tag 'guidelines'
 
