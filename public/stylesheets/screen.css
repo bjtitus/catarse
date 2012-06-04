@@ -707,7 +707,7 @@ body#platform #locales img:hover {
 }
 /* line 45, ../../app/stylesheets/screen.sass */
 body#platform #login {
-  background: url("/images/bg.jpg") repeat;
+  background-color: #666666;
   border: 5px solid #cccccc;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -1223,7 +1223,7 @@ body#platform #content_wrapper #content_header h1 a:hover {
 /* line 26, ../../app/stylesheets/_content.sass */
 body#platform #content_wrapper #content_header h2 {
   padding: 0 40px;
-  text-shadow: white 1px 1px 1px;
+  text-shadow: black 1px 1px 1px;
 }
 /* line 29, ../../app/stylesheets/_content.sass */
 body#platform #content_wrapper #content_header h2 a {
@@ -3721,7 +3721,7 @@ body#platform #footer #social_menu ul li a {
 }
 /* line 28, ../../app/stylesheets/_footer.sass */
 body#platform #footer #colophon {
-  margin: 0 auto;
+  margin: 0px 0px 0px 60px;
   width: 980px;
   font-size: 14px;
 }
