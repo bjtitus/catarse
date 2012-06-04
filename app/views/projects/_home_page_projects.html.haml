@@ -1,6 +1,8 @@
 - unless @home_page.empty?
-  .project_list_header= t(".title")
-  .project_list_subheader= t(".subtitle")
+  .project_list_header
+    %h1 Featured Projects
+  .project_list_subheader
+    %h2 These projects may be expiring soon, better hurry!
   #home_page_projects
     = render :partial => 'project', :collection => @home_page
     .clear
