@@ -1379,7 +1379,7 @@ body#platform #profile_header .info h2 .on_the_spot_editing form textarea.error 
 }
 /* line 41, ../../app/stylesheets/_profile.sass */
 body#platform #user_feed {
-  color: white;
+  color: #444444;
   font-size: 22px;
   line-height: 28px;
 }
@@ -1390,7 +1390,7 @@ body#platform #user_feed ul li {
 /* line 47, ../../app/stylesheets/_profile.sass */
 body#platform #user_feed h1 {
   font-size: 26px !important;
-  color: wheat !important;
+  color: #999999 !important;
   padding-bottom: 0 !important;
   padding-top: 0 !important;
 }
@@ -3860,7 +3860,7 @@ body#platform #press a img:hover {
 }
 /* line 2, ../../app/stylesheets/_credits.sass */
 body#platform #credits h1 {
-  color: white !important;
+  color: #222222 !important;
 }
 /* line 4, ../../app/stylesheets/_credits.sass */
 body#platform #credits #current_credits {
